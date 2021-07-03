@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/grey">
+        <TextView
+            style="@style/titleStyle"
+            android:text="@string/app_name"/>
+
+        <ImageView
+            android:id="@+id/main_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:onClick="onClick"
+            android:src="@mipmap/collect" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/grey">
+        <EditText
+            android:id="@+id/main_msgInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:background="@drawable/input_shape"
+            android:hint="@string/main_input"/>
+        <ImageView
+            android:id="@+id/main_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/search"
+            android:onClick="onClick"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/grey"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/main_bopomofo"
+            style="@style/moduleStyle"
+            android:background="@color/grey"
+            android:drawableTop="@mipmap/bopomofo"
+            android:text="@string/main_bopomofo" />
+
+        <TextView
+            android:id="@+id/main_radical"
+            style="@style/moduleStyle"
+            android:drawableTop="@mipmap/radical"
+            android:text="@string/main_radical"
+            android:background="@color/grey"/>
+
+    </LinearLayout>
+
+</LinearLayout>

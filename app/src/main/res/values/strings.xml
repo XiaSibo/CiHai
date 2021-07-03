@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">辞海</string>
+    <string name="main_input">在此输入汉字</string>
+    <string name="main_bopomofo">按拼音查</string>
+    <string name="main_radical">按部首查</string>
+    <string name="main_idiom">成语词典</string>
+    <string name="character_msg">文字详情</string>
+    <string name="character_basic_msg">基本释义</string>
+    <string name="character_detailed_msg">详细解释</string>
+    <string name="collect_title">我的收藏</string>
+</resources>
